@@ -1,0 +1,53 @@
+---
+# Version
+# Do not touch !
+version: 1.0
+
+# Command
+# command: [ COMMAND, DESCRIPTION, PERMISSION ]
+command: ["market", "MarketCommand"]
+command_aliases:
+  - ah
+
+# Economy
+# economy: EconomyAPI
+economy: EconomyAPI
+
+# Price
+price_min: 1
+price_max: 10000
+
+# BlackList
+# blacklist-items:
+#   - "ID:META"
+blacklist-items:
+  - "1:0"
+
+# Title
+title: "{prefix}"
+
+# Messages
+prefix: "§bMarketPlugin§f "
+command_usage: "{prefix}To sell an item to the market you must execute the following command with the item in your hand: §b/ah sell PRICE"
+item_blacklisted: "{prefix}The item you have in your hands is banned from the market!"
+retrieve_item: "{prefix}You have successfully recovered your item from the market!"
+item_already_sell: "{prefix}The item you selected has already been sold!"
+no_valid_price: "{prefix}You must enter a price between 1 and 10,000!"
+price_is_numeric: "{prefix}You must indicate a price in figures!"
+sell_item: "{prefix}You put the item in your hands up for sale!"
+no_sell_item_air: "{prefix}You cannot sell air at the market!"
+no_money: "{prefix}You don't have enough money!"
+
+# Items
+# item: [ ID, META, CUSTOM_NAME ]
+info_price: [339, 0, "§r§fPrice: §b{price}"]
+info_seller: [339, 0, "§r§fSeller: §b{seller}"]
+info_date: [339, 0, "§r§fDate of sale: §b{date}"]
+back_buy: [160, 14, "§l§cBack"]
+confirm_buy: [160, 5, "§l§aConfirm"]
+outline: [160, 15, "§r"]
+my_sales: [266, 0, "§r§fMy Sales"]
+back: [262, 0, "§l§cBack"]
+next: [262, 0, "§l§aNext"]
+page: [339, 0, "§r§fPage n°§b{page}"]
+...

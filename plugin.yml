@@ -1,0 +1,5 @@
+name: MarketPlugin
+version: 1.0
+api: 4.0.0
+main: Digueloulou12\MarketMain
+author: Digueloulou12
